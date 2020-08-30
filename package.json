@@ -1,0 +1,40 @@
+{
+  "name": "evaluation-puppeteer",
+  "version": "0.0.1",
+  "description": "This is a template repository to create test-ware for evaluating certain (JS) test automation tools.",
+  "main": "-",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test npx cucumber-js --no-strict --parallel 2",
+    "lint": "eslint tests --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szikszail/evaluation-template.git"
+  },
+  "keywords": [
+    "Test",
+    "automation",
+    "Tool",
+    "Evaluation",
+    "JavaScript"
+  ],
+  "author": "Laszlo Szikszai <sziklaszlo@gmail.com>",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/szikszail/evaluation-template/issues"
+  },
+  "homepage": "https://github.com/szikszail/evaluation-template#readme",
+  "dependencies": {
+    "cross-env": "^7.0.2",
+    "cucumber": "^6.0.5",
+    "cucumber-pretty": "^6.0.0",
+    "eslint": "^6.8.0",
+    "husky": "^4.0.10",
+    "jest": "^26.1.0",
+    "jest-puppeteer": "^4.4.0",
+    "puppeteer": "^5.0.0"
+  },
+  "husky": {
+    "precommit": "npm run lint"
+  }
+}
